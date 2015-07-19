@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /links/cache/
+Disallow: /links/data/
+Disallow: /links/images/
+Disallow: /links/inc/
+Disallow: /links/pagecache/
+Disallow: /links/sessions/
+Disallow: /links/tmp/
+Disallow: /links/tpl/
+Disallow: /paste/
+Disallow: /bag/
+Disallow: /rss/
+Disallow: /private/
+Disallow: /sessions/
