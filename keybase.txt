@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/jmlrt
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://julien.mailleret.fr
+  * I am jmlrt (https://keybase.io/jmlrt) on keybase.
+  * I have a public key ASBh_B8aXnfLFyQqLIAy1X2wNG5ul-aGR-aBrAVfO2B7Pgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012077f5e0ad831c746eec5c278335f269bba025ebb8da2c195ef276e74328bd627c0a",
+      "host": "keybase.io",
+      "kid": "012061fc1f1a5e77cb17242a2c8032d57db0346e6e97e68647e681ac055f3b607b3e0a",
+      "uid": "4f694205ba33b331054284c917fa8119",
+      "username": "jmlrt"
+    },
+    "merkle_root": {
+      "ctime": 1554971018,
+      "hash": "4f2c6c46959e882e86b785f4ec99170ab6bde1b8412876f2c8cc9b02cbfd44b4031ba1b9266ff03e3897972c67b3ab7bac49c69b23bced93a869a1b2f9873970",
+      "hash_meta": "4897ea6d998a3f78bb1e728972082d02dab5d81f808b40edac31101737798b08",
+      "seqno": 5141663
+    },
+    "service": {
+      "entropy": "MsqBoQOXr6uY1NJRRrrTI/+7",
+      "hostname": "julien.mailleret.fr",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "3.2.1"
+  },
+  "ctime": 1554971043,
+  "expire_in": 504576000,
+  "prev": "ef425cf17a3017d65fcab2308626a9cb3326d51d7e5ce46ed20bde364a48de5b",
+  "seqno": 26,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgYfwfGl53yxckKiyAMtV9sDRubpfmhkfmgawFXztgez4Kp3BheWxvYWTESpcCGsQg70Jc8XowF9ZfyrIwhiapyzMm1R1+XORu0gveNkpI3lvEIB1qrXboCKTBHe9PP+L9sKIdKeJDz4dReGXmwUi64ZlgAgHCo3NpZ8RAaZT2XwXHE9ka44oBgNwexdvt3AIWVgDxdSEuuWBzkIv5oqsODkLO6Mn+1S3RCv++PWKa0NrT5TN9slWzrfoIAqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIK0mXkKZbCgtTsIBed6ZQ26S8rsOK32tW9RkmaTSrbmto3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jmlrt
+
+==================================================================

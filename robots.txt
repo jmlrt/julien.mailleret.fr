@@ -1,15 +1,6 @@
 User-agent: *
-Disallow: /links/cache/
-Disallow: /links/data/
-Disallow: /links/images/
-Disallow: /links/inc/
-Disallow: /links/pagecache/
-Disallow: /links/sessions/
-Disallow: /links/tmp/
-Disallow: /links/tpl/
-Disallow: /private/
-Disallow: /sessions/
 Disallow: /.git/
+Disallow: /keybase.txt
 
 User-agent: SemrushBot
 Disallow: /
