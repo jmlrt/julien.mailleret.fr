@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Julien MAILLERET" />
+  <meta name="description" content="Senior Site Reliability Engineer specializing in Release Engineering and Platform Engineering" />
+  <title>Julien MAILLERET - Resume (Short)</title>
+  <style>
+
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+  <style type="text/css">
+:root {
+color-scheme: light dark;
+--primary-color: #1a1a1a;
+--secondary-color: #4a4a4a;
+--accent-color: #2563eb;
+--text-color: #333333;
+--light-gray: #666666;
+--border-color: #d1d5db;
+--bg-color: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+:root {
+--primary-color: #e4e4e7;
+--secondary-color: #a1a1aa;
+--accent-color: #60a5fa;
+--text-color: #d4d4d8;
+--light-gray: #a1a1aa;
+--border-color: #3f3f46;
+--bg-color: #0a0a0a;
+}
+}
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+font-size: 10.5pt;
+line-height: 1.6;
+color: var(--text-color);
+background: var(--bg-color);
+max-width: 8.5in;
+margin: 0 auto;
+padding: 0.6in 0.75in;
+-webkit-font-smoothing: antialiased;
+}
+
+header#title-block-header {
+display: none;
+}
+
+h1 {
+font-size: 28pt;
+font-weight: 700;
+color: var(--primary-color);
+margin-bottom: 8pt;
+letter-spacing: -0.5px;
+line-height: 1.2;
+border-bottom: none;
+}
+
+h1 + p {
+font-size: 12pt;
+color: var(--secondary-color);
+font-weight: 600;
+margin-bottom: 2pt;
+line-height: 1.3;
+text-transform: none;
+}
+
+h1 + p + p {
+font-size: 10pt;
+color: var(--light-gray);
+margin-bottom: 10pt;
+line-height: 1.3;
+}
+
+h1 + p + p + p {
+font-size: 9.5pt;
+color: var(--light-gray);
+margin-bottom: 20pt;
+padding-bottom: 16pt;
+border-bottom: 1px solid var(--border-color);
+line-height: 1.5;
+}
+
+a {
+color: var(--accent-color);
+text-decoration: none;
+transition: color 0.2s ease;
+}
+a:hover {
+text-decoration: underline;
+}
+
+h2 {
+font-size: 13pt;
+font-weight: 700;
+color: var(--primary-color);
+margin-top: 22pt;
+margin-bottom: 12pt;
+padding-bottom: 4pt;
+border-bottom: 1px solid var(--border-color);
+text-transform: uppercase;
+letter-spacing: 0.5px;
+}
+
+#summary + p {
+font-size: 10.5pt;
+line-height: 1.65;
+margin-bottom: 6pt;
+color: var(--text-color);
+text-align: justify;
+}
+#summary + p + p {
+font-size: 10pt;
+color: var(--light-gray);
+font-style: italic;
+margin-bottom: 4pt;
+text-align: justify;
+}
+
+h3 {
+font-size: 11pt;
+font-weight: 700;
+color: var(--primary-color);
+margin-top: 14pt;
+margin-bottom: 6pt;
+line-height: 1.4;
+}
+
+strong {
+color: var(--primary-color);
+font-weight: 600;
+font-size: 10pt;
+}
+
+em {
+color: var(--secondary-color);
+font-style: italic;
+font-weight: 500;
+font-size: 10pt;
+}
+
+h3 + ul + p {
+font-size: 9.5pt;
+color: var(--light-gray);
+line-height: 1.5;
+margin-top: 8pt;
+margin-bottom: 12pt;
+font-style: italic;
+}
+
+h3 + ul + p + p {
+margin-top: 12pt;
+}
+
+ul {
+margin-left: 18pt;
+margin-bottom: 10pt;
+line-height: 1.6;
+}
+li {
+margin-bottom: 5pt;
+padding-left: 4pt;
+color: var(--text-color);
+font-size: 10pt;
+}
+li::marker {
+color: var(--light-gray);
+}
+
+#core-skills + ul {
+margin-left: 18pt;
+columns: 1;
+}
+#core-skills + ul li {
+font-size: 10pt;
+}
+
+#experience + h3 {
+margin-top: 16pt;
+}
+
+#education + ul li {
+font-size: 10pt;
+}
+
+@media print {
+body {
+padding: 0.5in;
+max-width: 100%;
+}
+a {
+color: var(--text-color);
+text-decoration: none;
+}
+h2 {
+page-break-after: avoid;
+}
+h3 {
+page-break-after: avoid;
+}
+ul {
+page-break-inside: avoid;
+}
+}
+
+@page {
+size: letter;
+margin: 0.5in;
+}
+</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Julien MAILLERET - Resume (Short)</h1>
+<p class="author">Julien MAILLERET</p>
+</header>
+<h1 id="julien-mailleret">Julien MAILLERET</h1>
+<p><strong>Senior Site Reliability Engineer (Release Engineering /
+Platform Engineering)</strong></p>
+<p>Nantes, France (Remote)</p>
+<p><a href="mailto:job@mailleret.fr" class="email">job@mailleret.fr</a>
+• <a href="https://julien.mailleret.fr" class="uri">https://julien.mailleret.fr</a> • <a href="https://github.com/jmlrt" class="uri">https://github.com/jmlrt</a>
+• <a href="https://www.linkedin.com/in/julienmailleret" class="uri">https://www.linkedin.com/in/julienmailleret</a></p>
+<h2 id="summary">Summary</h2>
+<p>Senior SRE in Engineering Productivity / Release Engineering,
+designing and building internal developer platforms and tooling in Go
+and Python. Experienced in large-scale build/release systems (500+
+artifacts, 15+ repositories), Kubernetes/GitOps orchestration, API and
+infrastructure integrations, and supply chain security (code signing,
+artifact publishing).</p>
+<p>Focus: internal tooling and platforms, release engineering, CI/CD
+platforms, Kubernetes/GitOps automation, supply chain security.</p>
+<h2 id="core-skills">Core Skills</h2>
+<ul>
+<li>Release automation, CI/CD platform engineering, GitOps</li>
+<li>Cloud: AWS, GCP</li>
+<li>Kubernetes, Helm, Docker, Argo CD, Argo Workflows</li>
+<li>Buildkite, GitHub Actions, Jenkins, Tekton</li>
+<li>Terraform, Ansible, Pulumi</li>
+<li>Secrets management: HashiCorp Vault (consumer/integration)</li>
+<li>Go, Python, Bash</li>
+<li>Code signing, container security, supply chain security</li>
+<li>Observability: Elastic Stack</li>
+<li>AI-augmented development: Cursor, GitHub Copilot, Claude Code</li>
+</ul>
+<h2 id="experience">Experience</h2>
+<h3 id="elastic-senior-site-reliability-engineer-2019-present-remote-france">Elastic
+— Senior Site Reliability Engineer (2019-Present) — Remote (France)</h3>
+<ul>
+<li>Automate and operate build and release infrastructure for 500+
+artifacts across 15+ repositories; ship 30-60 versions/year.</li>
+<li>Operate Kubernetes-based GitOps deployment orchestration across
+multiple cloud providers and environments.</li>
+<li>Manage and improve code signing for stack artifacts and build
+tooling to integrate with external systems (Red Hat Partner Registry,
+IronBank).</li>
+<li>Author technical standards and design documents for release
+infrastructure; establish patterns adopted across Engineering
+Productivity.</li>
+<li>Coordinate cross-team delivery for new artifact releases;
+participate in follow-the-sun on-call; lead incident response and
+RCAs.</li>
+<li>Mentor junior engineers and onboard new team members.</li>
+</ul>
+<p><strong>Selected impact:</strong></p>
+<ul>
+<li>Customer Zero: owner for coordinating internal pre-release
+validation across 10+ teams, enabling early testing of release build
+candidates.</li>
+<li>Defined standards and reusable patterns for release infrastructure
+adopted across Engineering Productivity to reduce drift and improve
+operability.</li>
+<li>Built a Kubernetes controller in Go (custom CRD + reconciliation
+loop) integrating Argo Workflows; enabled 11 teams to migrate 57
+services to self-service deployments across 6 environments.</li>
+<li>Led migration of build/release pipelines from Jenkins/Tekton to
+Buildkite; designed a pipeline generator (Go + custom DSL) generating 13
+pipelines for 16 teams; reduced 20,000+ lines of YAML and improved
+performance by 50%.</li>
+<li>Reduced stack build time from 8+ hours to 2.5 hours via parallel
+builds (ephemeral CI workers) and asynchronous processing; enabled
+operating up to 4 releases in parallel.</li>
+<li>Built Python automation to publish Elastic UBI container images to
+the Red Hat Partner Registry and IronBank.</li>
+<li>Maintained Elastic public Helm charts and Ansible roles as community
+maintainer; drove roadmap, triaged issues, reviewed community PRs, and
+transitioned Helm charts from beta to GA before deprecation.</li>
+</ul>
+<h3 id="talend-site-reliability-engineer-2017-2019-nantes-france">Talend
+— Site Reliability Engineer (2017-2019) — Nantes, France</h3>
+<ul>
+<li>Managed Talend Cloud infrastructure; automated application stack
+builds and deployments.</li>
+<li>Applied infrastructure design patterns for multi-tenant,
+multi-region deployments.</li>
+</ul>
+<p><strong>Selected impact:</strong></p>
+<ul>
+<li>Built Talend Kubernetes platform using Kubespray, Ansible,
+Terraform, then AWS EKS.</li>
+<li>Integrated Talend Data Stewardship and Data Catalog into Talend
+Cloud platform.</li>
+</ul>
+<h3 id="weekendesk-lead-devops-2015-2017-paris-france">Weekendesk — Lead
+DevOps (2015-2017) — Paris, France</h3>
+<ul>
+<li>Led the production team; automated build and deployment processes;
+defined change/incident/on-call processes.</li>
+</ul>
+<p><strong>Selected impact:</strong></p>
+<ul>
+<li>Migrated infrastructure from on-premises to AWS.</li>
+<li>Improved infrastructure to handle TV campaign traffic spikes
+(autoscaling, CDN caching).</li>
+<li>Set up a 24/7 on-call duty process with developers.</li>
+</ul>
+<h3 id="axa-technology-services-middleware-unix-system-engineer-2008-2015-paris-france">AXA
+Technology Services — Middleware &amp; Unix System Engineer (2008-2015)
+— Paris, France</h3>
+<ul>
+<li>Managed Unix servers (200+ Linux/AIX), middleware applications, and
+SAN systems; contributed to 24/7 on-call support.</li>
+</ul>
+<h3 id="axa-system-administrator-apprentice-2004-2008-paris-france">AXA
+— System Administrator Apprentice (2004-2008) — Paris, France</h3>
+<ul>
+<li>System administration apprenticeship while completing Master’s
+degree.</li>
+</ul>
+<h2 id="education">Education</h2>
+<ul>
+<li>Master 2, Information System Management — ITIN-ESCIA (2007-2008) —
+Cergy, France</li>
+<li>Master 1 &amp; BTS, IT Management — ITIN-ESCIA / ISIMI (2003-2007) —
+Paris/Cergy, France</li>
+</ul>
+</body>
+</html>

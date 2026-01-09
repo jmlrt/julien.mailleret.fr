@@ -1,14 +1,114 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Julien Mailleret</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="referrer" content="no-referrer">
+<meta name="description" content="Julien Mailleret - Senior Site Reliability Engineer at Elastic">
+<title>Julien Mailleret</title>
+<style>
+:root {
+  color-scheme: light dark;
+  --fg: #1a1a1a;
+  --fg-muted: #666;
+  --bg: #fff;
+  --accent: #0066cc;
+  --accent-hover: #0052a3;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #e4e4e7;
+    --fg-muted: #a1a1aa;
+    --bg: #0a0a0a;
+    --accent: #3b82f6;
+    --accent-hover: #60a5fa;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--fg);
+  background: var(--bg);
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+  animation: fadeIn 0.6s ease-in;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+p {
+  margin-bottom: 1rem;
+  color: var(--fg-muted);
+}
+p:first-of-type {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+a {
+  color: var(--accent);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.2s;
+}
+a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+a:hover {
+  color: var(--accent-hover);
+}
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+@media (max-width: 640px) {
+  body {
+    padding: 3rem 1.25rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  p:first-of-type {
+    font-size: 1.125rem;
+  }
+}
+</style>
 </head>
-
 <body>
+<main>
 <h1>Julien Mailleret</h1>
 <p>Senior Site Reliability Engineer working at <a href="https://www.elastic.co">Elastic</a>, based in <a href="https://en.wikipedia.org/wiki/Nantes">Nantes</a>, France</p>
-</p><a href="mailto:contact@mailleret.fr">Contact</a> - <a href="./pub/CV_Julien_Mailleret.pdf">CV</a> - <a href="https://github.com/jmlrt/">GitHub</a> - <a href="https://keybase.io/jmlrt">Keybase</a> - <a href="https://linkedin.com/in/julienmailleret">Linkedin</a></p>
+<p><a href="./pub/resume-short-standalone.html">Resume</a> (<a href="./pub/resume-short.pdf">PDF</a>, <a href="./pub/resume-short.md">MD</a>) · <a href="./pub/resume-extended-standalone.html">Extended version</a> (<a href="./pub/resume-extended.pdf">PDF</a>, <a href="./pub/resume-extended.md">MD</a>)</p>
+<nav>
+<p><a href="mailto:contact@mailleret.fr">Contact</a> · <a href="https://github.com/jmlrt/">GitHub</a> · <a href="https://keybase.io/jmlrt">Keybase</a> · <a href="https://linkedin.com/in/julienmailleret">Linkedin</a></p>
+</nav>
+</main>
 </body>
+</html>
