@@ -88,6 +88,20 @@ a:focus-visible {
   outline-offset: 2px;
   border-radius: 2px;
 }
+nav {
+  margin-top: 1.5rem;
+}
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
 @media (max-width: 640px) {
   body {
     padding: 3rem 1.25rem;
@@ -104,10 +118,10 @@ a:focus-visible {
 <body>
 <main>
 <h1>Julien Mailleret</h1>
-<p>Senior Site Reliability Engineer working at <a href="https://www.elastic.co">Elastic</a>, based in <a href="https://en.wikipedia.org/wiki/Nantes">Nantes</a>, France</p>
-<p><a href="./pub/resume-short-standalone.html">Resume</a> (<a href="./pub/resume-short.pdf">PDF</a>, <a href="./pub/resume-short.md">MD</a>) · <a href="./pub/resume-extended-standalone.html">Extended version</a> (<a href="./pub/resume-extended.pdf">PDF</a>, <a href="./pub/resume-extended.md">MD</a>)</p>
-<nav>
-<p><a href="mailto:contact@mailleret.fr">Contact</a> · <a href="https://github.com/jmlrt/">GitHub</a> · <a href="https://keybase.io/jmlrt">Keybase</a> · <a href="https://linkedin.com/in/julienmailleret">Linkedin</a></p>
+<p>Senior Site Reliability Engineer working at <a href="https://www.elastic.co" rel="noopener">Elastic</a>, based in <a href="https://en.wikipedia.org/wiki/Nantes" rel="noopener">Nantes</a>, France</p>
+<p><a href="./pub/resume-short-standalone.html">Resume</a> (<a href="./pub/resume-short.pdf">PDF</a>, <a href="./pub/resume-short.md">MD</a>) · <a href="./pub/resume-extended-standalone.html">Extended</a> (<a href="./pub/resume-extended.pdf">PDF</a>, <a href="./pub/resume-extended.md">MD</a>)</p>
+<nav aria-label="Social links">
+<p><a href="mailto:contact@mailleret.fr">Contact</a> · <a href="https://github.com/jmlrt/" rel="noopener">GitHub</a> · <a href="https://keybase.io/jmlrt" rel="noopener">Keybase</a> · <a href="https://linkedin.com/in/julienmailleret" rel="noopener">LinkedIn</a></p>
 </nav>
 </main>
 </body>
