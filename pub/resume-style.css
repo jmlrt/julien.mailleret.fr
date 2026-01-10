@@ -1,0 +1,227 @@
+/* Minimalist Resume Style */
+
+:root {
+  --primary-color: #1a1a1a;
+  --secondary-color: #4a4a4a;
+  --accent-color: #2563eb;
+  --text-color: #333333;
+  --light-gray: #666666;
+  --border-color: #d1d5db;
+  --bg-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.6;
+  color: var(--text-color);
+  background: var(--bg-color);
+  max-width: 8.5in;
+  margin: 0 auto;
+  padding: 0.6in 0.75in;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Hide pandoc title header */
+header#title-block-header {
+  display: none;
+}
+
+/* Header Section */
+h1 {
+  font-size: 28pt;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 8pt;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  border-bottom: none;
+}
+
+/* Job title (bold paragraph after h1) */
+h1 + p {
+  font-size: 12pt;
+  color: var(--secondary-color);
+  font-weight: 600;
+  margin-bottom: 2pt;
+  line-height: 1.3;
+  text-transform: none;
+}
+
+/* Location line */
+h1 + p + p {
+  font-size: 10pt;
+  color: var(--light-gray);
+  margin-bottom: 10pt;
+  line-height: 1.3;
+}
+
+/* Contact links */
+h1 + p + p + p {
+  font-size: 9pt;
+  color: var(--light-gray);
+  margin-bottom: 20pt;
+  padding-bottom: 16pt;
+  border-bottom: 1px solid var(--border-color);
+  line-height: 1.5;
+}
+
+h1 + p + p + p a {
+  white-space: nowrap;
+}
+
+/* Links styling */
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Section headers */
+h2 {
+  font-size: 13pt;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-top: 22pt;
+  margin-bottom: 12pt;
+  padding-bottom: 4pt;
+  border-bottom: 1px solid var(--border-color);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Summary section */
+#summary + p {
+  font-size: 10.5pt;
+  line-height: 1.65;
+  margin-bottom: 6pt;
+  color: var(--text-color);
+  text-align: justify;
+}
+
+#summary + p + p {
+  font-size: 10pt;
+  color: var(--light-gray);
+  font-style: italic;
+  margin-bottom: 4pt;
+  text-align: justify;
+}
+
+/* Job titles / subsection headers */
+h3 {
+  font-size: 11pt;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-top: 14pt;
+  margin-bottom: 6pt;
+  line-height: 1.4;
+}
+
+/* Strong text (like "Selected impact:") */
+strong {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 10pt;
+}
+
+/* Italic category labels under "Selected impact:" */
+em {
+  color: var(--secondary-color);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 10pt;
+}
+
+/* Environment paragraph (after job description bullets, before "Selected impact:") */
+h3 + ul + p {
+  font-size: 9.5pt;
+  color: var(--light-gray);
+  line-height: 1.5;
+  margin-top: 8pt;
+  margin-bottom: 12pt;
+  font-style: italic;
+}
+
+/* "Selected impact:" heading after Environment paragraph */
+h3 + ul + p + p {
+  margin-top: 12pt;
+}
+
+/* Lists */
+ul {
+  margin-left: 18pt;
+  margin-bottom: 10pt;
+  line-height: 1.6;
+}
+
+li {
+  margin-bottom: 5pt;
+  padding-left: 4pt;
+  color: var(--text-color);
+  font-size: 10pt;
+}
+
+li::marker {
+  color: var(--light-gray);
+}
+
+/* Skills section - simple single column */
+#core-skills + ul {
+  margin-left: 18pt;
+  columns: 1;
+}
+
+#core-skills + ul li {
+  font-size: 10pt;
+}
+
+/* Experience section */
+#experience + h3 {
+  margin-top: 16pt;
+}
+
+/* Education section */
+#education + ul li {
+  font-size: 10pt;
+}
+
+/* Print styles */
+@media print {
+  body {
+    padding: 0.5in;
+    max-width: 100%;
+  }
+
+  a {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+
+  h2 {
+    page-break-after: avoid;
+  }
+
+  h3 {
+    page-break-after: avoid;
+  }
+
+  ul {
+    page-break-inside: avoid;
+  }
+}
+
+/* PDF optimization */
+@page {
+  size: letter;
+  margin: 0.5in;
+}

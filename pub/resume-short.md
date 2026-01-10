@@ -4,7 +4,7 @@
 
 Nantes, France (Remote)
 
-<job@mailleret.fr> • <https://julien.mailleret.fr> • <https://github.com/jmlrt> • <https://www.linkedin.com/in/julienmailleret>
+<contact@mailleret.fr> • <https://julien.mailleret.fr> • <https://github.com/jmlrt> • <https://www.linkedin.com/in/julienmailleret>
 
 ## Summary
 

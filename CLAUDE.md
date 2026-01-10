@@ -20,16 +20,25 @@ The repository follows a simple structure:
 
 ## Build Process
 
-The HTML resume files are generated from Markdown using **pandoc**. When updating resumes:
+The HTML resume files are generated from Markdown using **pandoc** with `pub/resume-style.css` for styling. When updating resumes:
 
 1. Edit the Markdown source files in `pub/resume-short.md` or `pub/resume-extended.md`
-2. Generate standalone HTML using pandoc (the HTML files include embedded CSS for dark/light mode support)
-3. Generate PDF versions from the HTML or Markdown
+2. Generate standalone HTML and PDF using pandoc commands below
 
-Example pandoc command pattern (inferred from generator meta tag):
+Generate HTML and PDF files:
 ```bash
-pandoc pub/resume-short.md -o pub/resume-short-standalone.html --standalone
+cd pub
+
+# Short resume
+pandoc resume-short.md -o resume-short-standalone.html --standalone --css=resume-style.css --metadata title="Julien MAILLERET - Resume (Short)"
+pandoc resume-short.md -o resume-short.pdf --pdf-engine=weasyprint --css=resume-style.css --metadata title="Julien MAILLERET - Resume (Short)"
+
+# Extended resume
+pandoc resume-extended.md -o resume-extended-standalone.html --standalone --css=resume-style.css --metadata title="Julien MAILLERET - Resume (Extended)"
+pandoc resume-extended.md -o resume-extended.pdf --pdf-engine=weasyprint --css=resume-style.css --metadata title="Julien MAILLERET - Resume (Extended)"
 ```
+
+**Requirements:** pandoc and weasyprint (for PDF generation)
 
 ## Design Principles
 

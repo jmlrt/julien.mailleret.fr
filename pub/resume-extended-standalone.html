@@ -1,247 +1,47 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="Julien MAILLERET" />
-  <meta name="description" content="Senior Site Reliability Engineer specializing in Release Engineering and Platform Engineering" />
   <title>Julien MAILLERET - Resume (Extended)</title>
   <style>
-
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-
-ul.task-list[class]{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-font-size: inherit;
-width: 0.8em;
-margin: 0 0.8em 0.2em -1.6em;
-vertical-align: middle;
-}
-.display.math{display: block; text-align: center; margin: 0.5rem auto;}
-</style>
-  <style type="text/css">
-:root {
-color-scheme: light dark;
---primary-color: #1a1a1a;
---secondary-color: #4a4a4a;
---accent-color: #2563eb;
---text-color: #333333;
---light-gray: #666666;
---border-color: #d1d5db;
---bg-color: #ffffff;
-}
-@media (prefers-color-scheme: dark) {
-:root {
---primary-color: #e4e4e7;
---secondary-color: #a1a1aa;
---accent-color: #60a5fa;
---text-color: #d4d4d8;
---light-gray: #a1a1aa;
---border-color: #3f3f46;
---bg-color: #0a0a0a;
-}
-}
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-body {
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-font-size: 10.5pt;
-line-height: 1.6;
-color: var(--text-color);
-background: var(--bg-color);
-max-width: 8.5in;
-margin: 0 auto;
-padding: 0.6in 0.75in;
--webkit-font-smoothing: antialiased;
-}
-
-header#title-block-header {
-display: none;
-}
-
-h1 {
-font-size: 28pt;
-font-weight: 700;
-color: var(--primary-color);
-margin-bottom: 8pt;
-letter-spacing: -0.5px;
-line-height: 1.2;
-border-bottom: none;
-}
-
-h1 + p {
-font-size: 12pt;
-color: var(--secondary-color);
-font-weight: 600;
-margin-bottom: 2pt;
-line-height: 1.3;
-text-transform: none;
-}
-
-h1 + p + p {
-font-size: 10pt;
-color: var(--light-gray);
-margin-bottom: 10pt;
-line-height: 1.3;
-}
-
-h1 + p + p + p {
-font-size: 9.5pt;
-color: var(--light-gray);
-margin-bottom: 20pt;
-padding-bottom: 16pt;
-border-bottom: 1px solid var(--border-color);
-line-height: 1.5;
-}
-
-a {
-color: var(--accent-color);
-text-decoration: none;
-transition: color 0.2s ease;
-}
-a:hover {
-text-decoration: underline;
-}
-
-h2 {
-font-size: 13pt;
-font-weight: 700;
-color: var(--primary-color);
-margin-top: 22pt;
-margin-bottom: 12pt;
-padding-bottom: 4pt;
-border-bottom: 1px solid var(--border-color);
-text-transform: uppercase;
-letter-spacing: 0.5px;
-}
-
-#summary + p {
-font-size: 10.5pt;
-line-height: 1.65;
-margin-bottom: 6pt;
-color: var(--text-color);
-text-align: justify;
-}
-#summary + p + p {
-font-size: 10pt;
-color: var(--light-gray);
-font-style: italic;
-margin-bottom: 4pt;
-text-align: justify;
-}
-
-h3 {
-font-size: 11pt;
-font-weight: 700;
-color: var(--primary-color);
-margin-top: 14pt;
-margin-bottom: 6pt;
-line-height: 1.4;
-}
-
-strong {
-color: var(--primary-color);
-font-weight: 600;
-font-size: 10pt;
-}
-
-em {
-color: var(--secondary-color);
-font-style: italic;
-font-weight: 500;
-font-size: 10pt;
-}
-
-h3 + ul + p {
-font-size: 9.5pt;
-color: var(--light-gray);
-line-height: 1.5;
-margin-top: 8pt;
-margin-bottom: 12pt;
-font-style: italic;
-}
-
-h3 + ul + p + p {
-margin-top: 12pt;
-}
-
-ul {
-margin-left: 18pt;
-margin-bottom: 10pt;
-line-height: 1.6;
-}
-li {
-margin-bottom: 5pt;
-padding-left: 4pt;
-color: var(--text-color);
-font-size: 10pt;
-}
-li::marker {
-color: var(--light-gray);
-}
-
-#core-skills + ul {
-margin-left: 18pt;
-columns: 1;
-}
-#core-skills + ul li {
-font-size: 10pt;
-}
-
-#experience + h3 {
-margin-top: 16pt;
-}
-
-#education + ul li {
-font-size: 10pt;
-}
-
-@media print {
-body {
-padding: 0.5in;
-max-width: 100%;
-}
-a {
-color: var(--text-color);
-text-decoration: none;
-}
-h2 {
-page-break-after: avoid;
-}
-h3 {
-page-break-after: avoid;
-}
-ul {
-page-break-inside: avoid;
-}
-}
-
-@page {
-size: letter;
-margin: 0.5in;
-}
-</style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="resume-style.css" />
 </head>
 <body>
 <header id="title-block-header">
 <h1 class="title">Julien MAILLERET - Resume (Extended)</h1>
-<p class="author">Julien MAILLERET</p>
 </header>
 <h1 id="julien-mailleret">Julien MAILLERET</h1>
 <p><strong>Senior Site Reliability Engineer (Engineering Productivity /
 Release Engineering / Platform Engineering)</strong></p>
 <p>Nantes, France (Remote)</p>
-<p><a href="mailto:job@mailleret.fr" class="email">job@mailleret.fr</a>
-• <a href="https://julien.mailleret.fr" class="uri">https://julien.mailleret.fr</a> • <a href="https://github.com/jmlrt" class="uri">https://github.com/jmlrt</a>
-• <a href="https://www.linkedin.com/in/julienmailleret" class="uri">https://www.linkedin.com/in/julienmailleret</a></p>
+<p><a href="mailto:contact@mailleret.fr"
+class="email">contact@mailleret.fr</a> • <a
+href="https://julien.mailleret.fr"
+class="uri">https://julien.mailleret.fr</a> • <a
+href="https://github.com/jmlrt" class="uri">https://github.com/jmlrt</a>
+• <a href="https://www.linkedin.com/in/julienmailleret"
+class="uri">https://www.linkedin.com/in/julienmailleret</a></p>
 <h2 id="summary">Summary</h2>
 <p>Senior SRE in Engineering Productivity / Release Engineering,
 designing and building internal developer platforms and tooling in Go
@@ -268,7 +68,8 @@ security</li>
 <li>AI-augmented development: Cursor, GitHub Copilot, Claude Code</li>
 </ul>
 <h2 id="experience">Experience</h2>
-<h3 id="elastic-senior-site-reliability-engineer-2019-present-remote-france">Elastic
+<h3
+id="elastic-senior-site-reliability-engineer-2019-present-remote-france">Elastic
 — Senior Site Reliability Engineer (2019-Present) — Remote (France)</h3>
 <ul>
 <li>Design and build release automation and internal developer tooling
@@ -404,7 +205,8 @@ testing, application tuning, autoscaling, CDN caching).</li>
 on-call duty process with developers on call.</li>
 <li>Deployed a Kubernetes POC cluster on AWS using kOps.</li>
 </ul>
-<h3 id="axa-technology-services-middleware-engineer-2013-2015-paris-france">AXA
+<h3
+id="axa-technology-services-middleware-engineer-2013-2015-paris-france">AXA
 Technology Services — Middleware Engineer (2013-2015) — Paris,
 France</h3>
 <ul>
@@ -426,7 +228,8 @@ methodologies.</p>
 <li>Migrated AXA Banque WebSphere MQ platform (upgrade, architecture
 consolidation, HA).</li>
 </ul>
-<h3 id="axa-technology-services-unix-system-engineer-2008-2013-paris-france">AXA
+<h3
+id="axa-technology-services-unix-system-engineer-2008-2013-paris-france">AXA
 Technology Services — Unix System Engineer (2008-2013) — Paris,
 France</h3>
 <ul>
@@ -447,7 +250,8 @@ application deployment: Apache, Tomcat, WebSphere).</li>
 <li>Implemented monitoring (Centreon), backup (TSM), and patching (RHN)
 solutions.</li>
 </ul>
-<h3 id="axa-technology-services-system-administrator-apprentice-2007-2008-paris-france">AXA
+<h3
+id="axa-technology-services-system-administrator-apprentice-2007-2008-paris-france">AXA
 Technology Services — System Administrator Apprentice (2007-2008) —
 Paris, France</h3>
 <ul>
@@ -457,7 +261,8 @@ day-to-day operations/administration.</li>
 <li>Participated in AXA Banque website migration (insourcing hosting
 infrastructure and CMS migration).</li>
 </ul>
-<h3 id="axa-banque-network-system-administrator-apprentice-2004-2007-paris-france">AXA
+<h3
+id="axa-banque-network-system-administrator-apprentice-2004-2007-paris-france">AXA
 Banque — Network &amp; System Administrator Apprentice (2004-2007) —
 Paris, France</h3>
 <ul>
