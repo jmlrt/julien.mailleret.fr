@@ -18,13 +18,13 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 10.5pt;
-  line-height: 1.6;
+  font-size: 9pt;
+  line-height: 1.2;
   color: var(--text-color);
   background: var(--bg-color);
   max-width: 8.5in;
   margin: 0 auto;
-  padding: 0.6in 0.75in;
+  padding: 0.125in 0.4in;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -35,10 +35,10 @@ header#title-block-header {
 
 /* Header Section */
 h1 {
-  font-size: 28pt;
+  font-size: 22pt;
   font-weight: 700;
   color: var(--primary-color);
-  margin-bottom: 8pt;
+  margin-bottom: 4pt;
   letter-spacing: -0.5px;
   line-height: 1.2;
   border-bottom: none;
@@ -46,7 +46,7 @@ h1 {
 
 /* Job title (bold paragraph after h1) */
 h1 + p {
-  font-size: 12pt;
+  font-size: 13pt;
   color: var(--secondary-color);
   font-weight: 600;
   margin-bottom: 2pt;
@@ -58,7 +58,7 @@ h1 + p {
 h1 + p + p {
   font-size: 10pt;
   color: var(--light-gray);
-  margin-bottom: 10pt;
+  margin-bottom: 6pt;
   line-height: 1.3;
 }
 
@@ -66,9 +66,8 @@ h1 + p + p {
 h1 + p + p + p {
   font-size: 9pt;
   color: var(--light-gray);
-  margin-bottom: 20pt;
-  padding-bottom: 16pt;
-  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 8pt;
+  padding-bottom: 4pt;
   line-height: 1.5;
 }
 
@@ -92,28 +91,50 @@ h2 {
   font-size: 13pt;
   font-weight: 700;
   color: var(--primary-color);
-  margin-top: 22pt;
-  margin-bottom: 12pt;
-  padding-bottom: 4pt;
+  margin-top: 0pt;
+  margin-bottom: 1pt;
+  padding-bottom: 2pt;
   border-bottom: 1px solid var(--border-color);
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
+/* First section header (Summary) - no extra top margin needed */
+h2:first-of-type {
+  margin-top: 0pt;
+}
+
+/* Subsequent section headers */
+h2 + * + h2,
+#summary + p + h2,
+#core-skills + ul + h2 {
+  margin-top: 6pt;
+}
+
+/* Core Skills section - after Focus line */
+#core-skills {
+  margin-top: 5pt;
+}
+
+/* Education section - after last experience */
+#education {
+  margin-top: 7pt;
+}
+
 /* Summary section */
 #summary + p {
-  font-size: 10.5pt;
-  line-height: 1.65;
-  margin-bottom: 6pt;
+  font-size: 10pt;
+  line-height: 1.2;
+  margin-bottom: 2pt;
   color: var(--text-color);
   text-align: justify;
 }
 
 #summary + p + p {
-  font-size: 10pt;
+  font-size: 11pt;
   color: var(--light-gray);
   font-style: italic;
-  margin-bottom: 4pt;
+  margin-bottom: 3pt;
   text-align: justify;
 }
 
@@ -122,83 +143,151 @@ h3 {
   font-size: 11pt;
   font-weight: 700;
   color: var(--primary-color);
-  margin-top: 14pt;
-  margin-bottom: 6pt;
-  line-height: 1.4;
+  margin-top: 3pt;
+  margin-bottom: 1pt;
+  line-height: 1.3;
 }
 
-/* Strong text (like "Selected impact:") */
-strong {
-  color: var(--primary-color);
-  font-weight: 600;
-  font-size: 10pt;
+/* First h3 after EXPERIENCE section - less top margin */
+#experience + h3 {
+  margin-top: 2pt;
 }
 
-/* Italic category labels under "Selected impact:" */
-em {
-  color: var(--secondary-color);
-  font-style: italic;
-  font-weight: 500;
-  font-size: 10pt;
-}
-
-/* Environment paragraph (after job description bullets, before "Selected impact:") */
+/* Environment paragraph after job description bullets */
 h3 + ul + p {
-  font-size: 9.5pt;
-  color: var(--light-gray);
-  line-height: 1.5;
-  margin-top: 8pt;
-  margin-bottom: 12pt;
-  font-style: italic;
+  margin-top: 4pt;
+  margin-bottom: 4pt;
 }
 
-/* "Selected impact:" heading after Environment paragraph */
-h3 + ul + p + p {
-  margin-top: 12pt;
+/* "Selected impact:" subsection heading */
+h4 {
+  font-size: 10pt;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-top: 2pt;
+  margin-bottom: 1pt;
+  line-height: 1.3;
+}
+
+/* "Selected impact:" after Environment paragraph (extended resume only) */
+p + h4 {
+  margin-top: 4pt;
+}
+
+/* Category labels under "Selected impact:" (e.g., "Infrastructure modernization:") */
+h5 {
+  font-size: 9pt;
+  font-weight: normal;
+  font-style: italic;
+  color: var(--secondary-color);
+  margin-top: 2pt;
+  margin-bottom: 1pt;
+  line-height: 1.3;
+}
+
+/* List after h4/h5 - add bottom margin for separation */
+h4 + ul,
+h5 + ul {
+  margin-bottom: 2pt;
 }
 
 /* Lists */
 ul {
-  margin-left: 18pt;
-  margin-bottom: 10pt;
-  line-height: 1.6;
+  margin-left: 14pt;
+  margin-bottom: 2pt;
+  line-height: 1.2;
 }
 
 li {
-  margin-bottom: 5pt;
-  padding-left: 4pt;
+  margin-bottom: 0pt;
+  padding-left: 2pt;
   color: var(--text-color);
-  font-size: 10pt;
+  font-size: 9pt;
 }
 
 li::marker {
   color: var(--light-gray);
 }
 
-/* Skills section - simple single column */
+/* Skills section - single column */
 #core-skills + ul {
-  margin-left: 18pt;
+  margin-left: 16pt;
   columns: 1;
 }
 
 #core-skills + ul li {
-  font-size: 10pt;
+  font-size: 9pt;
 }
 
-/* Experience section */
-#experience + h3 {
-  margin-top: 16pt;
-}
 
 /* Education section */
 #education + ul li {
-  font-size: 10pt;
+  font-size: 9pt;
+}
+
+/* Screen styles - larger fonts for HTML viewing */
+@media screen {
+  body {
+    font-size: 10pt;
+  }
+
+  h1 {
+    font-size: 23pt;
+  }
+
+  h1 + p {
+    font-size: 14pt;
+  }
+
+  h1 + p + p {
+    font-size: 11pt;
+  }
+
+  h1 + p + p + p {
+    font-size: 10pt;
+  }
+
+  h2 {
+    font-size: 14pt;
+  }
+
+  #summary + p {
+    font-size: 11pt;
+  }
+
+  #summary + p + p {
+    font-size: 12pt;
+  }
+
+  h3 {
+    font-size: 12pt;
+  }
+
+  h4 {
+    font-size: 11pt;
+  }
+
+  h5 {
+    font-size: 10pt;
+  }
+
+  li {
+    font-size: 10pt;
+  }
+
+  #core-skills + ul li {
+    font-size: 10pt;
+  }
+
+  #education + ul li {
+    font-size: 10pt;
+  }
 }
 
 /* Print styles */
 @media print {
   body {
-    padding: 0.5in;
+    padding: 0.125in 0.35in;
     max-width: 100%;
   }
 
@@ -222,6 +311,6 @@ li::marker {
 
 /* PDF optimization */
 @page {
-  size: letter;
-  margin: 0.5in;
+  size: A4;
+  margin: 0.2in 0.35in;
 }

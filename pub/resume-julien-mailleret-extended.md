@@ -9,23 +9,22 @@ Nantes, France (Remote)
 ## Summary
 
 Senior SRE in Engineering Productivity / Release Engineering, designing and building internal developer platforms and tooling in Go and Python.
-Drive cross-team execution and adoption by setting standards, operating models, and technical direction for internal platforms.
+Contribute to technical standards and best practices across Engineering Productivity teams through documentation and knowledge sharing.
 Experienced in large-scale build/release systems (500+ artifacts, 15+ repositories), Kubernetes/GitOps orchestration, API and infrastructure integrations, and supply chain security (code signing, artifact publishing).
 
 Focus: internal tooling and platforms, release engineering, CI/CD platforms, Kubernetes/GitOps automation, supply chain security.
 
 ## Core Skills
 
-- Cloud: AWS, GCP
-- Kubernetes, Helm, Docker
-- GitOps: Argo CD, Argo Workflows
-- CI/CD: Buildkite, GitHub Actions, Jenkins, Tekton
-- Infrastructure as Code: Terraform, Ansible, Pulumi
-- Secrets management: HashiCorp Vault (consumer/integration)
 - Languages: Go, Python, Bash
-- Security: code signing, container security, supply chain security
-- Observability: Elastic Stack
-- AI-augmented development: Cursor, GitHub Copilot, Claude Code
+- Release Engineering: build/release automation, artifact management, CI/CD platform design
+- CI/CD & GitOps: Buildkite, GitHub Actions, Jenkins, Tekton, Argo CD, Argo Workflows
+- Kubernetes: custom controllers/CRDs, Helm
+- Cloud & Infrastructure: AWS, GCP, Terraform, Ansible, Pulumi
+- Security: code signing (GPG, Windows, macOS, container images), HashiCorp Vault, supply chain security
+- Systems & Operations: Linux, incident response, troubleshooting, on-call
+- Leadership & Collaboration: technical leadership, mentoring, cross-team coordination, technical documentation
+- AI-augmented Development: Cursor, GitHub Copilot, Claude Code
 
 ## Experience
 
@@ -43,9 +42,9 @@ Focus: internal tooling and platforms, release engineering, CI/CD platforms, Kub
 
 Environment: Go, Python, AWS, GCP, Kubernetes, Helm, Argo CD, Argo Workflows, Buildkite, GitHub Actions, Terraform, Artifactory, HashiCorp Vault (consumer/integration), code signing.
 
-**Selected impact:**
+#### Selected impact:
 
-*Infrastructure modernization:*
+##### Infrastructure modernization:
 
 - Led migration of stack build and release pipelines from Jenkins/Tekton to Buildkite, making key architectural decisions; designed a pipeline generator (Go + custom DSL) generating 13 pipelines for 16 teams to standardize delivery and enable reuse; reduced 20,000+ lines of YAML and improved performance by 50%.
 - Reduced stack snapshots and staging build time from 8+ hours to 2.5 hours by evolving from sequential builds to parallel product builds with ephemeral CI workers, then implementing asynchronous builds.
@@ -53,28 +52,28 @@ Environment: Go, Python, AWS, GCP, Kubernetes, Helm, Argo CD, Argo Workflows, Bu
 - Enabled doubling the number of versions maintained and released each year, and a shift from single-release operation to running up to 4 releases in parallel.
 - Reduced operational toil and delivery risk through self-service tooling, standardization, and repeatable operating patterns.
 
-*Cloud platform engineering:*
+##### Cloud platform engineering:
 
 - Built a Kubernetes controller in Go (custom CRD + reconciliation loop) integrating Argo Workflows to enable self-service deployments with consistent orchestration; enabled 11 teams to migrate 57 services to self-service GitOps deployments across 6 environments.
 
-*Release quality and process:*
+##### Release quality and process:
 
 - Customer Zero: owner for coordinating internal pre-release validation across 10+ teams, enabling early testing of release build candidates.
 - Operated major, minor, and patch stack releases and cloud releases; led incident response and RCAs for release infrastructure incidents (e.g., package repository and dependency ecosystem incidents).
 
-*Reliability and operability:*
+##### Reliability and operability:
 
 - Reduced alert noise and improved on-call experience through operational excellence initiatives (alert tuning, process improvements).
 
-*Partner distribution and publishing:*
+##### Partner distribution and publishing:
 
 - Built Python automation to publish Elastic UBI container images to the Red Hat Partner Registry and IronBank.
 
-*Supply chain security:*
+##### Supply chain security:
 
 - Manage and improve code signing for stack artifacts (GPG, Windows, macOS, container images).
 
-*Community (historical):*
+##### Community (historical):
 
 - Maintained Elastic public Helm charts and Ansible roles as community maintainer; drove roadmap, triaged issues, reviewed community PRs, and transitioned Helm charts from beta to GA before deprecation.
 
@@ -88,7 +87,7 @@ Environment: Go, Python, AWS, GCP, Kubernetes, Helm, Argo CD, Argo Workflows, Bu
 
 Environment: AWS, Azure, Docker, Kubernetes; Terraform, Ansible, Puppet, CloudFormation; Python, Bash; PostgreSQL, MongoDB, Elasticsearch, Redis, Kafka; Jenkins, Maven; Elastic Stack (ELK), Prometheus, Zipkin; Scrum.
 
-**Selected impact:**
+#### Selected impact:
 
 - Deployed Talend Data Stewardship and Talend Data Catalog to Talend Cloud.
 - Built Talend Kubernetes platform using Kubespray, Ansible, Terraform, then AWS EKS.
@@ -103,7 +102,7 @@ Environment: AWS, Azure, Docker, Kubernetes; Terraform, Ansible, Puppet, CloudFo
 
 Environment: AWS, Docker; Apache, Tomcat, HAProxy; Ansible, Packer, Terraform; PostgreSQL, MongoDB, Elasticsearch, RabbitMQ; Jenkins, Maven; Java, Python; Scrum.
 
-**Selected impact:**
+#### Selected impact:
 
 - Migrated infrastructure from on-premises to AWS.
 - Improved infrastructure to handle TV campaign traffic spikes (load testing, application tuning, autoscaling, CDN caching).
@@ -120,7 +119,7 @@ Environment: AWS, Docker; Apache, Tomcat, HAProxy; Ansible, Packer, Terraform; P
 
 Environment: Unix (AIX, Red Hat Linux); WebSphere middleware (WAS, ESB, WMQ); Web (Apache, Tomcat); NoSQL (MongoDB); ITIL and Lean methodologies.
 
-**Selected impact:**
+#### Selected impact:
 
 - Implemented dedicated, isolated infrastructure for AXA Banque "Soon" (pilot digital offer) (Tomcat, MongoDB, MySQL, Chef, Git).
 - Migrated AXA Banque WebSphere MQ platform (upgrade, architecture consolidation, HA).
@@ -133,7 +132,7 @@ Environment: Unix (AIX, Red Hat Linux); WebSphere middleware (WAS, ESB, WMQ); We
 
 Environment: Unix (AIX, Red Hat Linux); SAN (IBM); WebSphere WAS; Centreon; TSM; ITIL.
 
-**Selected impact:**
+#### Selected impact:
 
 - Implemented server administration tools and processes to scale infrastructure up to 180 servers (installation, user management, application deployment: Apache, Tomcat, WebSphere).
 - Implemented monitoring (Centreon), backup (TSM), and patching (RHN) solutions.
